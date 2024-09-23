@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User-Agent Switcher</title>
+    <style>
+        body { font-family: Arial, sans-serif; min-width: 250px; padding: 10px; }
+        select, input { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+<h3>User-Agent Switcher</h3>
+
+<label for="website">Website:</label>
+<input type="text" id="website" placeholder="https://example.com">
+
+<label for="userAgent">User-Agent:</label>
+<select id="userAgent">
+    <option value="Windows-Chrome">Windows - Chrome</option>
+    <option value="Mac-Chrome">Mac - Chrome</option>
+    <option value="Linux-Firefox">Linux - Firefox</option>
+    <option value="Windows-Firefox">Windows - Firefox</option>
+</select>
+
+<button id="addSite">Add Website</button>
+
+<h4>Configured Websites:</h4>
+<ul id="siteList"></ul>
+
+<script src="popup.js"></script>
+</body>
+</html>
